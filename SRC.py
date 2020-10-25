@@ -13,6 +13,7 @@ ghosts = [
     [vector(100, 160), vector(0, -5)],
     [vector(100, -160), vector(-5, 0)],
 ]
+# game by madhav narayan (udemy)
 tiles = [
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,
@@ -54,7 +55,7 @@ def offset(point):
     y = (180 - floor(point.y, 20)) / 20
     index = int(x + y * 20)
     return index
-
+# game by madhav narayan (udemy)
 def valid(point):
     "Return True if point is valid in tiles."
     index = offset(point)
@@ -135,7 +136,7 @@ def move():
             return
 
     ontimer(move, 100)
-
+# game by madhav narayan (udemy)
 def change(x, y):
     "Change pacman aim if valid."
     if valid(pacman + vector(x, y)):
